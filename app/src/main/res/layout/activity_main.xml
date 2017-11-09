@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.senon.screenfitpx.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@drawable/radio_button_selector"
+            android:textSize="@dimen/x28" />
+        <RadioButton
+            android:id="@+id/rb_sucess"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@drawable/radio_button_selector"
+            android:textSize="@dimen/x28" />
+        <RadioButton
+            android:id="@+id/rb_waitApprove"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待审(0)"
+            android:textColor="@drawable/radio_button_selector"
+            android:textSize="@dimen/x28" />
+
+        <RadioButton
+            android:id="@+id/rb_waitSchedu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待调(0)"
+            android:textColor="@drawable/radio_button_selector"
+            android:textSize="@dimen/x28" />
+
+        <RadioButton
+            android:id="@+id/rb_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="驳回"
+            android:textColor="@drawable/radio_button_selector"
+            android:textSize="@dimen/x28" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/line_one"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x48"
+            android:layout_weight="1"
+            android:background="@color/txt_blue_color" />
+
+        <View
+            android:id="@+id/line_two"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x48"
+            android:layout_weight="1"
+            android:background="@color/txt_blue_color"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/line_three"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x48"
+            android:layout_weight="1"
+            android:background="@color/txt_blue_color"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/line_four"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x48"
+            android:layout_weight="1"
+            android:background="@color/txt_blue_color"
+            android:visibility="invisible" />
+        <View
+            android:id="@+id/line_five"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x48"
+            android:layout_weight="1"
+            android:background="@color/txt_blue_color"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>
